@@ -5,6 +5,7 @@
     <RootNamespace>Kodenames_DotNET</RootNamespace>
     <UserSecretsId>da82a00f-3de5-42af-9956-35aadf70c313</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
