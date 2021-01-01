@@ -41,7 +41,7 @@ namespace Kodenames_DotNET
                 {
                     policy.AllowAnyHeader()
                         .AllowAnyMethod()
-                        .WithOrigins("http://localhost:3000")
+                        .AllowAnyOrigin()
                         .AllowCredentials();
                 });
             });
