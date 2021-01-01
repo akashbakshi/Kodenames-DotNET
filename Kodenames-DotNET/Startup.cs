@@ -41,8 +41,7 @@ namespace Kodenames_DotNET
                 {
                     policy.AllowAnyHeader()
                         .AllowAnyMethod()
-                        .AllowAnyOrigin()
-                        .AllowCredentials();
+                        .AllowAnyOrigin();
                 });
             });
         }
