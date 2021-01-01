@@ -57,7 +57,6 @@ namespace Kodenames_DotNET
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Kodenames_DotNET v1"));
             }
 
-            app.UseHttpsRedirection();
 
             app.UseCors("CorsPolicy");
             app.UseRouting();
