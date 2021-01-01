@@ -27,14 +27,6 @@ namespace Kodenames_DotNET
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Kodenames_DotNET", Version = "v1" });
-            });
-
-            services.AddSignalR();
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy", policy =>
@@ -44,6 +36,14 @@ namespace Kodenames_DotNET
                         .AllowAnyOrigin();
                 });
             });
+            services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Kodenames_DotNET", Version = "v1" });
+            });
+
+            services.AddSignalR();
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
