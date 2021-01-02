@@ -228,7 +228,7 @@ namespace Kodenames_DotNET.Hubs
         }
 
         /*
-        * Used to create a brand new game session given the room name and teams
+        * Used to create a brand new game session given the room name and teams 
         */
         public async Task NewGame(string name, Team teamA, Team teamB,bool isTimed, int roundTime)
         {
