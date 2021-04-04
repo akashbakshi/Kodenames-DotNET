@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kodenames-deployment
+  labels:
+    app: kodenames
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kodenames
+  template:
+    metadata:
+      labels:
+        app: kodenames
+    spec:
+      containers:
+      - name: kodenames
+        image: registry.bubblelabs.ca/kodenames:latest
+        ports:
+        - containerPort: 80
+
